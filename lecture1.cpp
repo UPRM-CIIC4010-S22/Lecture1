@@ -2,14 +2,14 @@
 #include <iostream>
 #include <string>
 #include <cctype>
-#include <Triangle.h>
+#include "Triangle.h"
 
 using namespace std;
 
 double computeTriangleArea(Triangle t) {
 
-  double s = (t.side1 + t.side2 + t.side3) / 2;
-  double area = sqrt(s * (s - t.side1) * (s - t.side2) * (s - t.side3));
+  double s = (t.getSide1() + t.getSide2() + t.getSide3()) / 2;
+  double area = sqrt(s * (s - t.getSide1()) * (s - t.getSide2()) * (s - t.getSide3()));
   return area;
 
 }
