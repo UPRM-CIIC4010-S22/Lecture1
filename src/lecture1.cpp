@@ -35,7 +35,11 @@ int main() {
 
   Triangle myList[3] { Triangle(4, 13, 15), Triangle(10,10,10), Triangle(20, 20, 20) };
 
-  cout << Triangle::sumAreas(myList, 3);
+  cout << Triangle::sumAreas(myList, 3) << endl;
+
+  cout << Triangle(10,10,10).compare(Triangle(20,20,20)) << endl;
+  cout << Triangle(20,20,20).compare(Triangle(10,10,10)) << endl;
+  cout << Triangle(20,20,20).compare(Triangle(20,20,20)) << endl;
 
   cout << "Hello World Hello -> " << encode("Hello World Hello") << endl;
 

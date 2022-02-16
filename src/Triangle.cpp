@@ -17,3 +17,12 @@ double Triangle::sumAreas(Triangle list[], int numTriangles) {
     return sum;
 
 }
+
+int Triangle::compare(Triangle t) {
+
+    double diff = this->getArea() - t.getArea();
+    if (diff < 0) return -1;
+    if (diff > 0) return 1;
+    return 0;
+
+}

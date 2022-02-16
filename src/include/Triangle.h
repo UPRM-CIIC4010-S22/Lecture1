@@ -28,6 +28,7 @@ public:
     }
 
     double getArea();
+    int compare(Triangle t);
     static double sumAreas(Triangle list[], int numTriangles);
 
 };
