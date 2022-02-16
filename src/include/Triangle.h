@@ -29,6 +29,7 @@ public:
 
     double getArea();
     int compare(Triangle t);
+    Triangle scale(double factor);
     static double sumAreas(Triangle list[], int numTriangles);
 
 };

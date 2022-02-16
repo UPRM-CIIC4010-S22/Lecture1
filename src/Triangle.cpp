@@ -26,3 +26,10 @@ int Triangle::compare(Triangle t) {
     return 0;
 
 }
+
+
+Triangle Triangle::scale(double factor) {
+
+    return Triangle(this->getSide1()*factor, this->getSide2()*factor,this->getSide3()*factor);
+
+}
