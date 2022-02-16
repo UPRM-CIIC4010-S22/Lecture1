@@ -29,9 +29,13 @@ string encode(string clearText) {
 int main() {
 
   Triangle t1(4, 13, 15);
-  cout << "Area is: " << t1.computeTriangleArea() << endl;
-  cout << "Area is: " << Triangle(10, 10, 10).computeTriangleArea() << endl;
-  cout << "Area is: " << Triangle(20, 20, 20).computeTriangleArea() << endl;
+  cout << "Area is: " << t1.getArea() << endl;
+  cout << "Area is: " << Triangle(10, 10, 10).getArea() << endl;
+  cout << "Area is: " << Triangle(20, 20, 20).getArea() << endl;
+
+  Triangle myList[3] { Triangle(4, 13, 15), Triangle(10,10,10), Triangle(20, 20, 20) };
+
+  cout << Triangle::sumAreas(myList, 3);
 
   cout << "Hello World Hello -> " << encode("Hello World Hello") << endl;
 
