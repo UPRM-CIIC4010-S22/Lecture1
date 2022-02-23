@@ -1,4 +1,5 @@
 #include <cmath>
+#include <vector>
 #include "include/Triangle.h"
 
 double Triangle::getArea() {
@@ -8,10 +9,10 @@ double Triangle::getArea() {
     return area;
 }
 
-double Triangle::sumAreas(Triangle list[], int numTriangles) {
+double Triangle::sumAreas(vector<Triangle> list) {
 
     double sum = 0;
-    for (int i = 0; i < numTriangles; i++) {
+    for (int i = 0; i < list.size(); i++) {
         sum += list[i].getArea();
     }
     return sum;
