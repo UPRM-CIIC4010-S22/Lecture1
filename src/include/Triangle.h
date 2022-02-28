@@ -32,6 +32,7 @@ public:
     double getArea();
     int compare(Triangle t);
     Triangle scale(double factor);
+    Triangle scale();
     static double sumAreas(vector<Triangle> list);
 
 };

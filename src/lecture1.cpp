@@ -43,7 +43,7 @@ int main() {
 
   Triangle dummy(10,10,10);
 
-  Triangle doubleDummy = dummy.scale(2.0);
+  Triangle doubleDummy = dummy.scale();
   Triangle halfDummy = dummy.scale(0.5);
 
   cout << "Hello World Hello -> " << encode("Hello World Hello") << endl;
